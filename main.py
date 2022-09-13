@@ -1,8 +1,13 @@
+
+#how to find path
+import pandas as pd
+import os
+working_directory = os.getcwd()
+print(working_directory)
+
 #efficient way
 df = pd.concat([pd.read_csv(f) for f in glob.glob('/Users/elenaprimes/Test_Folder/*.csv')], ignore_index = True)
 df.to_csv(r'/Users/elenaprimes/Results_Folder/Test1.csv', index = False)
-
-
 
 #longer way
 import pandas as pd
