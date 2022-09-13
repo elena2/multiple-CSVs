@@ -1,4 +1,0 @@
-import pandas as pd
-import os
-working_directory = os.getcwd()
-print(working_directory)
